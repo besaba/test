@@ -1,9 +1,21 @@
 package testapplication;
 
-public class TestApplication {
+import javax.swing.JFrame;
+
+public class TestApplication extends JFrame {
+    
+    public TestApplication() {
+        this.setTitle("Hello!");
+        this.setSize(640, 480);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+    }
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        TestApplication test;
+        test = new TestApplication();
+        test.setVisible(true);
     }
     
 }
