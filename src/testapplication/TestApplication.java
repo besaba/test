@@ -8,7 +8,6 @@ public class TestApplication extends JFrame {
         this.setTitle("Hello!");
         this.setSize(640, 480);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
     }
 
     public static void main(String[] args) {
