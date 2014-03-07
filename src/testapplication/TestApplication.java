@@ -1,5 +1,7 @@
 package testapplication;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -18,6 +20,13 @@ public class TestApplication extends JFrame {
         JMenuBar bar = new JMenuBar();
         JMenu menu1 = new JMenu("File");
         JMenuItem item1 = new JMenuItem("Exit");
+        item1.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                System.exit(0);
+            }
+        });
         menu1.add(item1);
         JMenu menu2 = new JMenu("Help");
         JMenuItem item2 = new JMenuItem("About");
